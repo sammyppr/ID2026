@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>普通の表</h3>
+    <table border="1">
+        <tr>
+            <th>プラン名</th>
+            <th>料金</th>
+        </tr>
+        <tr>
+            <td>わくわくプラン</td>
+            <td>月額2,900円</td>
+        </tr>
+        <tr>
+            <td>にこにこプラン</td>
+            <td>月額1,900円</td>
+        </tr>
+        
+    </table>
+    <hr>
+    <h3>セルをつなげていない表</h3>
+    <table border="1">
+        <tr>
+            <th>セル1</th>
+            <th>セル2</th>
+        </tr>
+        <tr>
+            <td>セル3</td>
+            <td>セル4</td>
+        </tr>
+        <tr>
+            <td>セル5</td>
+            <td>セル6</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>セルを横に繋げた表</h3>
+    <table border="1">
+        <tr>
+            <th colspan="2">セル1+2</th>
+        </tr>
+        <tr>
+            <td>セル3</td>
+            <td>セル4</td>
+        </tr>
+        <tr>
+            <td>セル5</td>
+            <td>セル6</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>セルを縦に繋げた表</h3>
+    <table>
+        <tr>
+            <th>セル1</th>
+            <th>セル2</th>
+        </tr>
+        <tr>
+            <td rowspan="2">セル3+5</td>
+            <td>セル4</td>
+        </tr>http://127.0.0.1:55934/ID_03/img/test.jpg
+        <tr>
+            <td>セル6</td>
+        </tr>
+    </table>
+    <a href="../ID_02/kadai.html">ID_02のkadai.html</a>
+    <img src="./test.jpg">
+    <hr>
+    <h3>相対パス</h3>
+    <img src="./img/test.jpg">
+    <hr>
+    <h3>絶対パス</h3>
+    <img src="/ID_03/img/test.jpg">
+</body>
+</html>
