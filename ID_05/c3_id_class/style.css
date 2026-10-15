@@ -1,0 +1,32 @@
+body {
+    margin: 0px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    border-left: 10px solid gray;
+    border-bottom: 1px solid gray;
+    padding-left: 10px;
+    color: #333;
+}
+p {
+    width: 30%;
+    padding: 5px;
+}
+.boy {
+    color: blue;
+    border: 1px dashed black;
+}
+.girl {
+    color: red;
+    border: 1px dashed black;
+    margin-left: 70%;
+}
+a {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 10px;
+}
