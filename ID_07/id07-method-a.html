@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 100px 1fr 100px;
+            grid-template-rows: 50px 100px 1fr 50px;
+            height: 100vh;
+        }
+        .item-header{
+            background-color: salmon;
+            grid-row: 1/2;
+            grid-column: 1/4;
+        }
+        .item-nav{
+            background-color: lightblue;
+            grid-row: 2/4;
+            grid-column: 1/2;
+        }
+        .item-main{
+            background-color: lightgreen;
+            grid-row: 2/4;
+            grid-column: 2/3;
+        }
+        .item-ad {
+            background-color: gray;
+            grid-row: 2/3;
+            grid-column: 3/4;
+        }
+        .item-side {
+            background-color: lightpink;
+            grid-row: 3/4;
+            grid-column: 3/4;
+        }
+        .item-footer {
+            background-color: lightgray;
+            grid-row: 4/5;
+            grid-column: 1/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-header">タイトル</div>
+        <div class="item-nav">ナビ</div>
+        <div class="item-main">メイン</div>
+        <div class="item-ad">広告</div>
+        <div class="item-side">サイド</div>
+        <div class="item-footer">フッター</div>
+    </div>
+</body>
+</html>

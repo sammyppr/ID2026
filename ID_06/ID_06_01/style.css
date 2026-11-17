@@ -1,0 +1,19 @@
+body {
+    color: white;
+    margin: 0px;
+}
+header, main, footer {
+    padding: 12px;
+}
+header {
+    background-color: red;
+    height: 100px;
+}
+main {
+    background-color: green;
+    height: 100vh;
+}
+footer {
+    background-color: blue;
+    height: 50px;
+}

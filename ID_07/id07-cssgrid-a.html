@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-rows: 100px 50px;
+            grid-template-columns: 150px 1fr;
+        }
+
+        .item {
+            color: white;
+            font-size: 2rem;
+        }
+        .itemA{
+            background-color: red;
+            grid-row: 1/3;
+            grid-column: 1/2;
+            color: purple;
+            overflow: hidden;
+        }
+        .itemB{
+            background-color: green;
+            grid-row: 1/2;
+            grid-column: 2/3;
+        }
+        .itemC{
+            background-color: blue;
+            grid-row: 2/3;
+            grid-column: 1/3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item itemA">A Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ipsum, obcaecati repudiandae ut odit doloribus nostrum inventore atque illum dolore. Debitis aliquid eaque commodi itaque. Nemo sit est architecto id.</div>
+        <div class="item itemB">B</div>
+        <div class="item itemC">C</div>
+    </div>
+</body>
+</html>

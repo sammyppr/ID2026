@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            /* 線を引く */
+            grid-template-rows: 100px 50px;
+            grid-template-columns: 150px 1fr;
+            /* エリアに名前をつける */
+            grid-template-areas:
+                "areaA areaB"
+                "areaA areaC";
+        }
+
+        .item {
+            color: white;
+            font-size: 2rem;
+        }
+        .itemA{
+            background-color: red;
+            grid-area: areaA;
+            color: purple;
+            overflow: hidden;
+        }
+        .itemB{
+            background-color: green;
+            grid-area: areaB;
+        }
+        .itemC{
+            background-color: blue;
+            grid-area: areaC;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item itemA">A Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ipsum, obcaecati repudiandae ut odit doloribus nostrum inventore atque illum dolore. Debitis aliquid eaque commodi itaque. Nemo sit est architecto id.</div>
+        <div class="item itemB">B</div>
+        <div class="item itemC">C</div>
+    </div>
+</body>
+</html>

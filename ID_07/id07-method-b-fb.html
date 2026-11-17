@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 100px 1fr 100px;
+            grid-template-rows: 70px 50px 1fr 50px;
+            grid-template-areas: 
+                "header header header"
+                "nav main ad"
+                "nav main side"
+                "footer footer footer";
+            width: 100%;
+            height: 100vh;
+        }
+        .item-header{
+            background-color: salmon;
+            grid-area: header;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .item-nav{
+            background-color: lightblue;
+            grid-area: nav;
+        }
+        .item-main{
+            background-color: lightgreen;
+            grid-area: main;
+
+            padding: 10px;
+        }
+        .item-ad {
+            background-color: gray;
+            grid-area: ad;
+        }
+        .item-side {
+            background-color: lightpink;
+            grid-area: side;
+        }
+        .item-footer {
+            background-color: lightgray;
+            grid-area: footer;
+        }
+
+        .fb-container {
+            width: 100%;
+            display: flex;
+        }
+        .fb-item {
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        img {
+            border-radius: 10px;
+        }
+        .item-nav ul{
+            padding-left: 10px;
+
+        }
+        .item-nav ul li {
+            list-style: none;
+        }
+        img {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-header">
+            <img src="https://picsum.photos/50/50" width="50" height="50">
+            <h2>Flexbox/CSS grid</h2>
+        </div>
+        <div class="item-nav">
+            <h3>Navigation</h3>
+            <ul>
+                <li>menu1</li>
+                <li>menu2</li>
+                <li>menu3</li>
+                <li>menu4</li>
+                <li>menu5</li>
+                <li>menu6</li>
+            </ul>
+        </div>
+        <div class="item-main">
+            <h3>メイン</h3>
+            <div class="fb-container">
+                <div class="fb-item">
+                    <img src="https://picsum.photos/200/100">
+                    <h4>記事1</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio blanditiis necessitatibus at. Similique praesentium nobis et excepturi rem at quasi!</p>
+                </div>
+                <div class="fb-item">
+                    <img src="https://picsum.photos/200/100">
+                    <h4>記事2</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio blanditiis necessitatibus at. Similique praesentium nobis et excepturi rem at quasi!</p>
+                </div>
+                <div class="fb-item">
+                    <img src="https://picsum.photos/200/100">
+                    <h4>記事3</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio blanditiis necessitatibus at. Similique praesentium nobis et excepturi rem at quasi!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item-ad">広告</div>
+        <div class="item-side">サイド</div>
+        <div class="item-footer">フッター</div>
+    </div>
+</body>
+</html>
